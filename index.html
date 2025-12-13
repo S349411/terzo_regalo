@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Regalo 🎁</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<main class="wrap">
+
+  <header class="card">
+    <div class="badge">🕶️ Regalo</div>
+    <h1></h1>
+
+    <div class="rhyme">
+      <div class="rhyme-title">📜</div>
+      <p class="rhyme-text">
+        You thought the surprises were finally done,
+        You looked around thinking, “Well, that was fun.”
+
+        But wait just a second, don’t act so cold,
+        Now come on, your father is so bold.
+
+        This box appeared with no warning at all,
+        A secret, a joke, a mysterious call.
+        So don’t ask questions, just do as you’re told,
+        And open the gift — your father is so bold.
+      </p>
+    </div>
+  </header>
+
+  <section class="stage">
+    <div class="gift" id="gift" aria-label="Pacco regalo" role="button" tabindex="0">
+      <div class="lid" id="lid">
+        <div class="bow-area">
+          <div class="bow" id="bow" aria-label="Fiocco trascinabile" role="button" tabindex="0">
+            <div class="loop left"></div>
+            <div class="knot"></div>
+            <div class="loop right"></div>
+            <div class="tail left"></div>
+            <div class="tail right"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="box">
+        <div class="ribbon v"></div>
+        <div class="ribbon h"></div>
+      </div>
+
+      <div class="confetti" id="confetti" aria-hidden="true"></div>
+
+      <div class="surprise" id="surprise" aria-hidden="true">
+        <img src="assets/regalo3.jpg" alt="Il tuo regalo " />
+        <div class="msg">Sbloccato. 😈</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="after" id="after">
+    <div class="after-card">
+      <div class="after-title"></div>
+      <div class="after-text">Questo regalo è da parte di:</div>
+      <div class="after-names" id="afterNames"></div>
+    </div>
+  </section>
+
+  <button class="reset" id="reset" type="button">Ricomincia</button>
+
+  <!-- Modal lista completa -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalClose"></div>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-label="Partecipanti">
+      <div class="modal-head">
+        <div class="modal-title">Partecipanti 🔒</div>
+        <button class="modal-x" id="modalX" type="button" aria-label="Chiudi">✕</button>
+      </div>
+      <div class="modal-body" id="modalList"></div>
+    </div>
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
