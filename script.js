@@ -14,7 +14,7 @@ const modalList = document.getElementById("modalList");
 let opened = false;
 
 // SOLO questi partecipanti
-const people = ["Zen", "Luca", "Mattia", "Sofia", "Michele", "Clelia", "Barcio"];
+const people = ["Zen", "Luca", "Mattia", "Antonio", "Sofia", "Michele", "Clelia", "Barcio"];
 
 /* Modal */
 function openModal(){
